@@ -12,6 +12,7 @@ contract Transaction {
     uint public productCount;
 
     function createProduct(string memory _name, uint _price) public {
+        require(_price > 0, "Product price must be greater than zero");
         productCount++;
         products[productCount] = Product(_name, _price, msg.sender, false);
     }
