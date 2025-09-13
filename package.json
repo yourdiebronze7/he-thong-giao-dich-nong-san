@@ -1,6 +1,6 @@
 {
   "name": "he-thong-giao-dich-nong-san",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Hệ thống Giao dịch Nông sản",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,6 @@
     "dotenv": "^8.2.0"
   },
   "devDependencies": {},
-  "author": "",
+  "author": "Your Name Here",
   "license": "MIT"
 }
