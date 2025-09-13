@@ -24,7 +24,7 @@ contract Transaction {
     function purchaseProduct(uint _productId) public payable {
         Product storage _product = products[_productId];
         require(!_product.isSold, "Product already sold");
-        require(msg.value >= _product.price, "Not enough Ether");
+        require(msg.value >= _product.price, "Not enough Ether sent");
 
         _product.owner = msg.sender;
         _product.isSold = true;
